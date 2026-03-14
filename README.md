@@ -5,8 +5,7 @@
 ---
 
 ## 📱 Preview
-> **Tip:** Add your best app screenshots here to showcase the UI/UX.
-![App Dashboard Overlay](https://via.placeholder.com/800x400?text=Smart+Analytics+Dashboard+Preview)
+
 
 ---
 
