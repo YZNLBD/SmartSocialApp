@@ -46,6 +46,8 @@
     │   ├── domain/      # TypeScript Entities & Interfaces
     │   └── presentation/# Dashboard, Charts & UI Components
 ```
+---
+
 ## ⚙️ Setup and Installation
 1. Backend Setup
 Navigate to the backend folder: cd backend
@@ -65,6 +67,8 @@ Update the BASE_URL with your local machine's IP address (e.g., http://192.168.1
 4.Start the application:
    npx expo start
 
+---
+
 ## 🗺️ Roadmap
 [ ] Phase 1: Implement OAuth 2.0 for real YouTube & Meta API integration.
 
@@ -73,6 +77,8 @@ Update the BASE_URL with your local machine's IP address (e.g., http://192.168.1
 [ ] Phase 3: Integrate advanced AI models for predictive growth analytics.
 
 [ ] Phase 4: Dark Mode support and PDF report generation.
+
+---
 
 ## 📄 License
 This project is for personal portfolio purposes. Feel free to explore and use the logic for your own learning!
