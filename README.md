@@ -1,50 +1,78 @@
-# Welcome to your Expo app 👋
+# SmartSocialApp 📊🤖
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+**SmartSocialApp** is a robust Full-Stack mobile application designed for social media creators to monitor their performance across multiple platforms (YouTube, Instagram, TikTok). The project demonstrates a complete data cycle: from storage in a relational database (SQL) to processing via a Node.js backend, and finally, visualization in a React Native frontend.
 
-## Get started
+---
 
-1. Install dependencies
+## 📱 Preview
+> **Tip:** Add your best app screenshots here to showcase the UI/UX.
+![App Dashboard Overlay](https://via.placeholder.com/800x400?text=Smart+Analytics+Dashboard+Preview)
 
-   ```bash
-   npm install
-   ```
+---
 
-2. Start the app
+## 🚀 Key Features
 
-   ```bash
+* **Dynamic Dashboard**: Automatically renders platform cards (YouTube, Instagram, TikTok) based on database records.
+* **AI Insight Engine**: A custom-built logic layer that analyzes engagement rates and provides actionable advice.
+* **Real-time Synchronization**: A "Sync" feature that simulates live API data fetching and updates the SQL database instantly.
+* **Data Visualization**: Interactive BarCharts to compare follower growth across different social networks using `react-native-chart-kit`.
+* **Clean Architecture**: Separated concerns between Frontend (React Native), Backend (Node.js/Express), and Database (SQLite).
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+* **Framework**: React Native (Expo)
+* **Language**: TypeScript
+* **Visualization**: React-native-chart-kit & React-native-svg
+
+### Backend
+* **Environment**: Node.js
+* **Framework**: Express.js
+* **Database**: SQLite3 (Relational Database)
+
+---
+
+## 📂 Project Structure
+
+```text
+├── backend/
+│   ├── server.js        # Express server, AI Logic & SQL Queries
+│   └── social.db        # SQLite Database file (Local Storage)
+└── SmartSocialApp/      # React Native Mobile App
+    ├── src/
+    │   ├── data/        # API services (Fetch/Sync functions)
+    │   ├── domain/      # TypeScript Entities & Interfaces
+    │   └── presentation/# Dashboard, Charts & UI Components
+
+⚙️ Setup and Installation
+1. Backend Setup
+Navigate to the backend folder: cd backend
+  Install dependencies:
+npm install
+  Start the server:
+node server.js
+
+2. Frontend Setup
+Install dependencies:
+npm install
+
+3.Network Configuration:
+Open src/data/StatsApi.ts.
+Update the BASE_URL with your local machine's IP address (e.g., http://192.168.1.XX:3000/api).
+
+4.Start the application:
    npx expo start
-   ```
 
-In the output, you'll find options to open the app in a
+🗺️ Roadmap
+[ ] Phase 1: Implement OAuth 2.0 for real YouTube & Meta API integration.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+[ ] Phase 2: Add User Authentication (Login/Signup) with JWT & Bcrypt.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+[ ] Phase 3: Integrate advanced AI models for predictive growth analytics.
 
-## Get a fresh project
+[ ] Phase 4: Dark Mode support and PDF report generation.
 
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+📄 License
+This project is for personal portfolio purposes. Feel free to explore and use the logic for your own learning!
