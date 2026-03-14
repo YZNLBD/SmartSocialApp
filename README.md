@@ -45,8 +45,8 @@
     │   ├── data/        # API services (Fetch/Sync functions)
     │   ├── domain/      # TypeScript Entities & Interfaces
     │   └── presentation/# Dashboard, Charts & UI Components
-
-⚙️ Setup and Installation
+```
+## ⚙️ Setup and Installation
 1. Backend Setup
 Navigate to the backend folder: cd backend
   Install dependencies:
@@ -65,7 +65,7 @@ Update the BASE_URL with your local machine's IP address (e.g., http://192.168.1
 4.Start the application:
    npx expo start
 
-🗺️ Roadmap
+## 🗺️ Roadmap
 [ ] Phase 1: Implement OAuth 2.0 for real YouTube & Meta API integration.
 
 [ ] Phase 2: Add User Authentication (Login/Signup) with JWT & Bcrypt.
@@ -74,5 +74,5 @@ Update the BASE_URL with your local machine's IP address (e.g., http://192.168.1
 
 [ ] Phase 4: Dark Mode support and PDF report generation.
 
-📄 License
+## 📄 License
 This project is for personal portfolio purposes. Feel free to explore and use the logic for your own learning!
